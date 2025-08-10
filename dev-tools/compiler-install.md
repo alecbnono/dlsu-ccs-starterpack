@@ -1,8 +1,8 @@
-# Installing GCC on Windows (via Chocolatey Package Manager)
+# Installing GCC on Windows & macOS
 
-This guide shows you how to install **GCC** using **Chocolatey**, which is one of the easiest ways to get a working compiler for **CCPROG1**.
+This guide shows you how to install **GCC** (GNU Compiler Collection) on both **Windows** and **macOS** so you can compile C programs for **CCPROG1**.
 
-## on Windows (via Chocolatey Package Manager)
+## on Windows (via Chocolatey)
 
 ### 1. Install Chocolatey
 
