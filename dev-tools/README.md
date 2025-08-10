@@ -12,7 +12,6 @@ You need a way to write your C code. Recommended options (covered in one guide):
 - **[Text Editors & IDEs Setup](./text-editors.md)** — Includes:
   - Visual Studio Code (Windows & macOS)
   - Dev-C++ (Windows)
-  - Xcode (macOS)
 
 ---
 
