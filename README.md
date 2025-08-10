@@ -61,12 +61,17 @@ Based on the official syllabus:
 - Practice coding alongside lecture topics
 - Review exercises before exams and hands-on tests
 
+---
+
 ## 🎯 Goals
 
 - Support **freshmen and transferees** in adapting to CCS requirements
 - Make C programming approachable from day one
 - Promote **good coding practices** and academic integrity
 - Provide a **foundation for advanced CCS courses** (CCPROG2, Data Structures, etc.)
+
+---
+
 ## 🤝 Contributing
 
 ### If you’re a CCS student or alum who wants to improve this starter pack:
@@ -78,6 +83,8 @@ Based on the official syllabus:
 - More exercises and solutions
 - Cheatsheets for commands or syntax
 - Tips for exams and projects
+
+---
 
 ## 📄 License
 
@@ -95,4 +102,6 @@ You must:
 
 Full license text is available in the [LICENSE](LICENSE) file.
 
-**Happy coding, Animo La Salle!** 💚🐎
+---
+
+## **Happy coding, Animo La Salle!** 💚🏹
