@@ -15,6 +15,7 @@ Make sure you:
 
 1. Open **PowerShell as Administrator**.
 2. Run:
+
    ```powershell
    choco install mingw -y
    ```
