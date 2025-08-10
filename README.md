@@ -79,12 +79,20 @@ Based on the official syllabus:
 - Cheatsheets for commands or syntax
 - Tips for exams and projects
 
----
-
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE) — free to use and adapt.
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
 
----
+You are free to:
+- Use this project for personal, educational, or commercial purposes
+- Modify and adapt it to suit your needs
+- Share and redistribute it under the same license
+
+You must:
+- Disclose your source code when distributing copies or derivative works
+- Include a copy of the GPLv3 license with your work
+- State any changes you made to the original project
+
+Full license text is available in the [LICENSE](LICENSE) file.
 
 **Happy coding, Animo La Salle!** 💚🐎
