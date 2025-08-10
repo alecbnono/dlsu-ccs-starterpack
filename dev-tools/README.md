@@ -1,0 +1,73 @@
+# Development Tools Setup 🛠
+
+This section of the **DLSU CCS Starter Pack** covers all the essential tools you’ll need for **CCPROG1** and beyond.  
+The goal is to make sure you can write, compile, and run C programs using **GCC** — the standard compiler for this course.
+
+---
+
+## 📋 Required Tools
+
+### 1️⃣ Text Editors / IDEs
+
+You need a way to write your C code. Recommended options (covered in one guide):
+
+- **[Text Editors & IDEs Setup](./text-editors.md)** — Includes:
+  - Visual Studio Code (Windows & macOS)
+  - Dev-C++ (Windows)
+  - Xcode (macOS)
+
+---
+
+### 2️⃣ Compiler
+
+**GCC** — The standard C compiler for CCPROG1.
+
+- Bundled with Dev-C++ (Windows)
+- Installed via **MinGW** for VS Code (Windows)
+- Installed via **Xcode Command Line Tools** (macOS)
+
+Follow the editor/IDE setup guide above to ensure GCC is installed correctly.
+
+---
+
+### 3️⃣ Terminal / Command Line
+
+You’ll need basic terminal skills to compile and run C programs outside your IDE:
+
+- **[Terminal Basics](./terminal-basics.md)** — Navigate folders, compile with `gcc`, run programs.
+- Works on:
+  - Command Prompt / PowerShell (Windows)
+  - Terminal.app (macOS)
+
+---
+
+### 4️⃣ Compiling & Running with GCC
+
+Learn the commands you’ll use most often in CCPROG1:
+
+- **[Compiling with GCC](./compiler.md)** — Step-by-step guide for Windows & macOS.
+- Covers:
+  - Compiling single-file programs
+  - Running executables
+  - Common compiler errors and fixes
+
+---
+
+## 📚 Recommended Order for Setup
+
+1. Install your text editor or IDE → [Text Editors & IDEs Setup](./text-editors.md)
+2. Make sure **GCC** is installed.
+3. Learn basic **terminal commands** → [Terminal Basics](./terminal-basics.md)
+4. Install compiler (GCC) → [GCC Install](./compiler-install.md)
+5. Practice compiling → [Compiling with GCC](./compiler.md)
+
+---
+
+## 💡 Pro Tips
+
+- Keep all your `.c` files organized in a dedicated folder for CCPROG1.
+- Test compiling from both your IDE **and** the terminal — you’ll need both skills.
+- Always compile with warnings enabled:
+  ```bash
+  gcc -Wall filename.c -o output
+  ```
