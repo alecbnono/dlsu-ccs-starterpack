@@ -48,7 +48,7 @@ Based on the official syllabus:
 
 ### 1. **Clone this repository**
    ```bash
-   git clone https://github.com/<your-username>/dlsu-ccs-starterpack.git
+   git clone https://github.com/alecbnono/dlsu-ccs-starterpack.git
    cd dlsu-ccs-starterpack
    ```
 ### 2. Browse the content
