@@ -1,4 +1,4 @@
-# Development Tools Setup 🛠
+# Getting Started (Development Tools Setup) 🛠
 
 This section of the **DLSU CCS Starter Pack** covers all the essential tools you’ll need for **CCPROG1** and beyond.  
 The goal is to make sure you can write, compile, and run C programs using **GCC** — the standard compiler for this course.
