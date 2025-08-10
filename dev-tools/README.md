@@ -7,7 +7,7 @@ The goal is to make sure you can write, compile, and run C programs using **GCC*
 
 ## 📋 Required Tools
 
-### 1️⃣ Text Editors / IDEs
+### Text Editors / IDEs
 
 You need a way to write your C code. Recommended options (covered in one guide):
 
@@ -18,7 +18,7 @@ You need a way to write your C code. Recommended options (covered in one guide):
 
 ---
 
-### 2️⃣ Compiler
+### Compiler
 
 **GCC** — The standard C compiler for CCPROG1.
 
@@ -30,7 +30,7 @@ Follow the editor/IDE setup guide above to ensure GCC is installed correctly.
 
 ---
 
-### 3️⃣ Terminal / Command Line
+### Terminal / Command Line
 
 You’ll need basic terminal skills to compile and run C programs outside your IDE:
 
@@ -41,7 +41,7 @@ You’ll need basic terminal skills to compile and run C programs outside your I
 
 ---
 
-### 4️⃣ Compiling & Running with GCC
+### Compiling & Running with GCC
 
 Learn the commands you’ll use most often in CCPROG1:
 
