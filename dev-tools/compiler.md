@@ -30,14 +30,14 @@ int main(void) {
   Use `cd` to navigate to the folder where your `.c` file is located:
 
   ```cmd
-      cd path\to\your\folder
+  cd path\to\your\folder
   ```
 
 - **macOS**:  
   Open **Terminal**.  
   Use `cd` to navigate to your file’s folder:
   ```bash
-      cd /path/to/your/folder
+  cd /path/to/your/folder
   ```
 
 ---
@@ -69,19 +69,19 @@ If there are no errors, this command creates a compiled program:
 - **Windows**:
 
 ```cmd
-  hello.exe
+hello.exe
 ```
 
 - **macOS**:
 
 ```bash
-  ./hello
+./hello
 ```
 
 Expected output:
 
 ```
-    Hello, CCPROG1!
+Hello, CCPROG1!
 ```
 
 ---
