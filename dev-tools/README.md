@@ -20,8 +20,8 @@ You need a way to write your C code. Recommended options (covered in one guide):
 **GCC** — The standard C compiler for CCPROG1.
 
 - Bundled with Dev-C++ (Windows)
-- Installed via **MinGW** for VS Code (Windows)
-- Installed via **Xcode Command Line Tools** (macOS)
+- Installed via **Chocolatey** for Windows
+- Installed via **Homebrew** (macOS)
 
 Follow the editor/IDE setup guide above to ensure GCC is installed correctly.
 
