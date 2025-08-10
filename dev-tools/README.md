@@ -56,10 +56,9 @@ Learn the commands you’ll use most often in CCPROG1:
 ## 📚 Recommended Order for Setup
 
 1. Install your text editor or IDE → [Text Editors & IDEs Setup](./text-editors.md)
-2. Make sure **GCC** is installed.
+2. Install compiler (GCC) → [GCC Install](./compiler-install.md)
 3. Learn basic **terminal commands** → [Terminal Basics](./terminal-basics.md)
-4. Install compiler (GCC) → [GCC Install](./compiler-install.md)
-5. Practice compiling → [Compiling with GCC](./compiler.md)
+4. Practice compiling → [Compiling with GCC](./compiler.md)
 
 ---
 
@@ -67,7 +66,7 @@ Learn the commands you’ll use most often in CCPROG1:
 
 - Keep all your `.c` files organized in a dedicated folder for CCPROG1.
 - Test compiling from both your IDE **and** the terminal — you’ll need both skills.
-- Always compile with warnings enabled:
+- Always compile with the following flags enabled:
   ```bash
-  gcc -Wall filename.c -o output
+  gcc -Wall -std=c99 filename.c -o output
   ```

@@ -4,11 +4,10 @@ This guide will help you install the recommended text editors and IDEs for **CCP
 
 - **VS Code** (Windows & macOS)
 - **Dev-C++** (Windows)
-- **Xcode** (macOS)
 
 ---
 
-## 1️⃣ Visual Studio Code (Windows & macOS)
+## Visual Studio Code (Windows & macOS)
 
 **Why use VS Code?**  
 VS Code is a lightweight yet powerful text editor that supports C programming with extensions.
@@ -35,7 +34,7 @@ VS Code is a lightweight yet powerful text editor that supports C programming wi
 
 ---
 
-## 2️⃣ Dev-C++ (Windows)
+## Dev-C++ (Windows)
 
 **Why use Dev-C++?**  
 It’s a simple IDE with built-in compiler support for beginners.
@@ -48,18 +47,3 @@ It’s a simple IDE with built-in compiler support for beginners.
    - Open Dev-C++ → File → New → Source File.
    - Save the file with a `.c` extension.
    - Click **Execute → Compile & Run**.
-
----
-
-## 3️⃣ Xcode (macOS)
-
-**Why use Xcode?**  
-It’s Apple’s official development environment and comes with a C compiler (`clang`) built-in.
-
-1. Open the **App Store** on your Mac.
-2. Search for **Xcode** and click **Get** → **Install**.
-3. Once installed, open Xcode and agree to the license.
-4. Install the command-line tools (required for GCC/Clang):
-   ```bash
-   xcode-select --install
-   ```
