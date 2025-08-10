@@ -58,8 +58,6 @@ Learn the commands you’ll use most often in CCPROG1:
 3. Learn basic **terminal commands** → [Terminal Basics](./terminal-basics.md)
 4. Practice compiling → [Compiling with GCC](./compiler.md)
 
----
-
 ## 💡 Pro Tips
 
 - Keep all your `.c` files organized in a dedicated folder for CCPROG1.
