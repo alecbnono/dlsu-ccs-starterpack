@@ -72,7 +72,7 @@ Add options for macOS:
 - `ls -l` → detailed list
 - `ls -a` → include hidden files
 
-## 5. Running Programs
+## 4. Running Programs
 
 - Windows:
 
@@ -88,7 +88,7 @@ Add options for macOS:
 
 ---
 
-## 6. Input and Output Redirection
+## 5. Input and Output Redirection
 
 ### Redirect Output to a File
 
@@ -132,7 +132,7 @@ Add options for macOS:
   ./programname < input.txt > output.txt
 ```
 
-## 7. Clearing the Screen
+## 6. Clearing the Screen
 
 - Windows:
 
