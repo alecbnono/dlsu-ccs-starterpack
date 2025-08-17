@@ -23,7 +23,7 @@ Whether you are an **accepted DLSU CCS student** preparing for your first term o
 | Module                           | Topics Covered                                           | Folder                                     |
 | -------------------------------- | -------------------------------------------------------- | ------------------------------------------ |
 | **00 - Getting Started**         | Dev tools, compiler setup, terminal basics, text editors | [00-getting-started/](00-getting-started/) |
-| **01 - Introduction to C**       | Hello World, basic syntax, comments                      | _coming soon_                              |
+| **01 - Introduction**            | Logic Formulation, C Structure, Tokens & Expressions     | [01-introduction/](01-introducntion/)      |
 | **02 - Variables & Data Types**  | Primitive types, constants, type conversion              | _coming soon_                              |
 | **03 - Operators & Expressions** | Arithmetic, relational, logical operators, precedence    | _coming soon_                              |
 | **04 - Input & Output**          | `printf`, `scanf`                                        | _coming soon_                              |
