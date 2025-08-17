@@ -63,8 +63,6 @@ int main(void) {
 - Every C program must have **one **``** function**.
 - Program execution always begins here.
 
----
-
 ### 5. Function Call
 
 `displayMessage();`
