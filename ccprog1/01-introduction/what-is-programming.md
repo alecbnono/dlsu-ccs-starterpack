@@ -55,7 +55,7 @@ Else
 
 **Flowchart:**
 
-<img src="assets/flowchart.png" />
+<img src="assets/flowchart.png" height="150px"/>
 
 ## Task
 
