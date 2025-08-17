@@ -8,7 +8,8 @@ Every C program follows a basic structure:
 #define MESSAGE "Hello CCPROG1! " // Macro definition: defines a constant MESSAGE
 
 // Function definition: user-defined function that prints MESSAGE
-void displayMessage() {
+void displayMessage()
+{
     printf(MESSAGE);          // Statement: prints the macro string
 }
 
@@ -42,7 +43,8 @@ int main(void)
 ### 3. Function Definition (User-defined)
 
 ```
-void displayMessage() {
+void displayMessage()
+{
     printf(MESSAGE);
 }
 ```
@@ -53,7 +55,8 @@ void displayMessage() {
 ### 4. Main Function
 
 ```
-int main(void) {
+int main(void)
+{
     displayMessage();
     printf("See you soon, DLSU CCS!\n");
     return 0;

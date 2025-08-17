@@ -3,7 +3,8 @@
 #define MESSAGE "Hello CCPROG1! " // Macro definition: defines a constant MESSAGE
 
 // Function definition: user-defined function that prints MESSAGE
-void displayMessage() {
+void displayMessage()
+{
     printf(MESSAGE);          // Statement: prints the macro string
 }
 
