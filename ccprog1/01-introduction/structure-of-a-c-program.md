@@ -28,21 +28,25 @@ int main(void)
 
 ### 1. Preprocessor Directive
 
-`#include <stdio.h>`
+```c
+#include <stdio.h>
+```
 
 - Tells the compiler to include the standard input/output library.
 - Needed to use functions like `printf`.
 
 ### 2. Macro Definition
 
-`#define MESSAGE "Hello CCPROG1!"`
+```c
+#define MESSAGE "Hello CCPROG1!"
+```
 
 - Defines a constant called `MESSAGE`.
 - During compilation, every `MESSAGE` in the code is replaced with `"Hello CCPROG1!"`.
 
 ### 3. Function Definition (User-defined)
 
-```
+```c
 void displayMessage()
 {
     printf(MESSAGE);
@@ -54,7 +58,7 @@ void displayMessage()
 
 ### 4. Main Function
 
-```
+```c
 int main(void)
 {
     displayMessage();
@@ -68,13 +72,16 @@ int main(void)
 
 ### 5. Function Call
 
-`displayMessage();`
+```c
+displayMessage();
+
+```
 
 - Runs the user-defined `displayMessage()` function.
 
 ### 6. Statements
 
-```
+```c
 printf(MESSAGE);
 printf("See you soon, DLSU CCS!\n");
 ```
@@ -84,7 +91,9 @@ printf("See you soon, DLSU CCS!\n");
 
 ### 7. Return Statement
 
-`return 0;`
+```c
+return 0;
+```
 
 - Indicates the program ended successfully.
 - Returning a non-zero value usually means an error occurred.
