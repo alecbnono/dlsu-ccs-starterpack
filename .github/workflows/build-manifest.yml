@@ -17,4 +17,4 @@ jobs:
         with:
           python-version: 3.11
       - name: Run build manifest
-        uses: python3 build-manifest.py
+        run: python3 build-manifest.py
