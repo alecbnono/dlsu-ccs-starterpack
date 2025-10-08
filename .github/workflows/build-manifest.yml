@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths-ignore:
-      - "./.github/workflows"
+      - ".github/workflows/build-manifest.yml"
 
 jobs:
   build:
@@ -22,8 +22,11 @@ jobs:
         with:
           python-version: 3.11
 
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
       - name: Run build manifest
-        run: python3 build-manifest.py
+        run: python build-manifest.py
 
       - name: Commit and push changes
         run: |
