@@ -1,0 +1,20 @@
+name: Build Manifest for CCS Starterpack
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+      - name: Run build manifest
+        uses: python3 build-manifest.py

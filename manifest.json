@@ -1,47 +1,47 @@
 [
-    {
-        "course": "ccprog1",
-        "title": "ccprog1",
-        "path": "/ccprog1",
-        "sections": [
-            {
-                "title": "Getting Started",
-                "lessons": [
-                    {
-                        "title": "Terminal Basics",
-                        "path": "/ccprog1/00-getting-started/03-terminal-basics"
-                    },
-                    {
-                        "title": "Text Editors",
-                        "path": "/ccprog1/00-getting-started/00-text-editors"
-                    },
-                    {
-                        "title": "Compiler",
-                        "path": "/ccprog1/00-getting-started/02-compiler"
-                    },
-                    {
-                        "title": "Compiler Install",
-                        "path": "/ccprog1/00-getting-started/01-compiler-install"
-                    }
-                ]
-            },
-            {
-                "title": "Introduction",
-                "lessons": [
-                    {
-                        "title": "What Is Programming",
-                        "path": "/ccprog1/01-introduction/00-what-is-programming"
-                    },
-                    {
-                        "title": "Tokens And Expressions",
-                        "path": "/ccprog1/01-introduction/02-tokens-and-expressions"
-                    },
-                    {
-                        "title": "Structure Of A C Program",
-                        "path": "/ccprog1/01-introduction/01-structure-of-a-c-program"
-                    }
-                ]
-            }
+  {
+    "course": "ccprog1",
+    "title": "ccprog1",
+    "path": "/ccprog1",
+    "sections": [
+      {
+        "title": "Getting Started",
+        "lessons": [
+          {
+            "title": "Terminal Basics",
+            "path": "/ccprog1/00-getting-started/03-terminal-basics"
+          },
+          {
+            "title": "Text Editors",
+            "path": "/ccprog1/00-getting-started/00-text-editors"
+          },
+          {
+            "title": "Compiler",
+            "path": "/ccprog1/00-getting-started/02-compiler"
+          },
+          {
+            "title": "Compiler Install",
+            "path": "/ccprog1/00-getting-started/01-compiler-install"
+          }
         ]
-    }
+      },
+      {
+        "title": "Introduction",
+        "lessons": [
+          {
+            "title": "What Is Programming",
+            "path": "/ccprog1/01-introduction/00-what-is-programming"
+          },
+          {
+            "title": "Tokens And Expressions",
+            "path": "/ccprog1/01-introduction/02-tokens-and-expressions"
+          },
+          {
+            "title": "Structure Of A C Program",
+            "path": "/ccprog1/01-introduction/01-structure-of-a-c-program"
+          }
+        ]
+      }
+    ]
+  }
 ]
