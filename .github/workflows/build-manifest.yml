@@ -22,9 +22,6 @@ jobs:
         with:
           python-version: 3.11
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
       - name: Run build manifest
         run: python build-manifest.py
 
