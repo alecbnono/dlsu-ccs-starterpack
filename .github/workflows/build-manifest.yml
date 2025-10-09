@@ -1,6 +1,7 @@
 name: Build Manifest for CCS Starterpack
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
