@@ -56,7 +56,6 @@ cd dlsu-ccs-starterpack
 ### 2. Browse the content
 
 - `/ccprog1/` → Topics organized by syllabus weeks
-- `/dev-tools/` → Setup guides and compiler instructions
 - `/math-series/` _(coming soon)_
 
 ### 3. Follow along with your syllabus
