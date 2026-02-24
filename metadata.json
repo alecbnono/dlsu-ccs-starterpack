@@ -1,11 +1,11 @@
 {
     "courses": [
         {
-            "title": "Ccicomp",
+            "title": "Introduction to Computing",
             "courseCode": "CCICOMP",
             "slug": "ccicomp",
-            "description": "No description provided for this course.",
-            "icon_key": "default",
+            "description": "A comprehensive introduction to computing systems, covering data representation, computer architecture, operating systems, networking, cybersecurity, software development, and databases.",
+            "icon_key": "LuCpu",
             "sections": []
         },
         {
@@ -94,11 +94,11 @@
             ]
         },
         {
-            "title": "Mth101A",
+            "title": "Foundation Course on Mathematics",
             "courseCode": "MTH101A",
             "slug": "mth101a",
-            "description": "No description provided for this course.",
-            "icon_key": "default",
+            "description": "The foundation of your CS journey. Learn the logic of C programming and basic algorithmic thinking.",
+            "icon_key": "LuSquareFunction",
             "sections": []
         }
     ]
