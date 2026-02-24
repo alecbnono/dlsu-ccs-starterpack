@@ -1,6 +1,14 @@
 {
     "courses": [
         {
+            "title": "Ccicomp",
+            "courseCode": "CCICOMP",
+            "slug": "ccicomp",
+            "description": "No description provided for this course.",
+            "icon_key": "default",
+            "sections": []
+        },
+        {
             "title": "Logic Formulation and Introductory Programming",
             "courseCode": "CCPROG1",
             "slug": "ccprog1",
@@ -84,6 +92,14 @@
                     ]
                 }
             ]
+        },
+        {
+            "title": "Mth101A",
+            "courseCode": "MTH101A",
+            "slug": "mth101a",
+            "description": "No description provided for this course.",
+            "icon_key": "default",
+            "sections": []
         }
     ]
 }
