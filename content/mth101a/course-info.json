@@ -1,6 +1,6 @@
 {
-  "fullTitle": "Foundation Course on Mathematics",
-  "courseCode": "MTH101A",
-  "description": "The foundation of your CS journey. Learn the logic of C programming and basic algorithmic thinking.",
-  "iconKey": "LuSquareFunction"
+    "fullTitle": "Foundation Course on Mathematics",
+    "courseCode": "MTH101A",
+    "description": "A foundational mathematics course covering algebra, functions, and analytical techniques essential for further studies in computer science.",
+    "iconKey": "LuSquareFunction"
 }
