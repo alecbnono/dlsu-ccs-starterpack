@@ -7,7 +7,6 @@ on:
       - main
       - dev
     paths:
-      - "content/**" # Better to run ONLY when content changes
       - "build-manifest.py" # Run if the logic changes
     paths-ignore:
       - ".github/workflows/build-manifest.yml"
@@ -21,7 +20,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        # with: persist-credentials: true is default in v4, no need to specify
 
       - name: Setup Python
         uses: actions/setup-python@v5
