@@ -6,7 +6,7 @@
             "icon_key": "code",
             "sections": [
                 {
-                    "title": "getting started",
+                    "title": "Getting Started",
                     "lessons": [
                         {
                             "title": "Dev Tools",
@@ -41,7 +41,7 @@
                     ]
                 },
                 {
-                    "title": "introduction",
+                    "title": "Introduction",
                     "lessons": [
                         {
                             "title": "Lesson Proper",

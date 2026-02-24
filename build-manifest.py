@@ -22,7 +22,7 @@ def clean_slug(filename):
     # Remove file extension
     name = os.path.splitext(filename)[0]
     # Remove leading numbers and dash (e.g., "01-")
-    name = re.sub(r'^\d+-', '', name)
+    name = name[3:]
     # Remove "activity-" keyword
     name = name.replace("activity-", "")
     return name
@@ -83,7 +83,7 @@ def generate_manifest():
 
             section_data = {
                 # Strips the "01-" from "01-Introduction" for the UI title
-                "title": re.sub(r'^\d+-', '', section_folder).replace("-", " "),
+                "title": format_title(section_folder),
                 "lessons": process_section(section_path, course_folder, section_folder)
             }
 
