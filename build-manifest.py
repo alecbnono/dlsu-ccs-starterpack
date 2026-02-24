@@ -1,72 +1,101 @@
 import os
 import json
+import re
 
+# --- CONFIGURATION ---
+CONTENT_DIR = "content"
+OUTPUT_FILE = "metadata.json"
 
-def clean_name(name):
-    clean = name[3:].replace("-", " ").title()
-    return clean
+# Maps your DLSU Course Codes to specific icon keys used in React
+COURSE_ICONS = {
+    "CCPROG1": "code",
+    "CCDSTRU": "binary",
+    "CCPROG3": "java",
+    "CCINFOM": "database",
+}
 
+def clean_slug(filename):
+    """
+    Removes order prefixes (01-) and 'activity-' tags for clean URLs.
+    Example: '02-activity-first-program.md' -> 'first-program'
+    """
+    # Remove file extension
+    name = os.path.splitext(filename)[0]
+    # Remove leading numbers and dash (e.g., "01-")
+    name = re.sub(r'^\d+-', '', name)
+    # Remove "activity-" keyword
+    name = name.replace("activity-", "")
+    return name
 
-def lesson_filter(name):
-    if name.endswith(".md"):
-        if name.lower().startswith("readme"):
-            return False
-        return True
-    return False
+def format_title(filename):
+    """
+    Converts a slug-style filename into a clean Title Case string.
+    Example: 'first-program' -> 'First Program'
+    """
+    slug = clean_slug(filename)
+    return slug.replace("-", " ").title()
 
+def get_lesson_type(filename):
+    """Determines if a lesson is a lecture or an activity based on filename."""
+    return "activity" if "activity" in filename.lower() else "lecture"
 
-def generate_lesson(name, section_path):
-    base_name = os.path.splitext(name)[0]
-    lesson = {
-        "title": clean_name(base_name),
-        "path": f"{section_path}/{base_name}".replace("\\", "/")
-    }
-    return lesson
+def process_section(section_path, course_name, section_name):
+    """Crawls a section folder and returns a list of lesson dictionaries."""
+    lessons = []
+    # Filter for .md files and sort them to respect the "01-", "02-" prefixes
+    files = sorted([f for f in os.listdir(section_path) if f.endswith(".md")])
 
+    for file_name in files:
+        lessons.append({
+            "title": format_title(file_name),
+            "slug": clean_slug(file_name),
+            "path": f"{course_name}/{section_name}/{file_name}",
+            "type": get_lesson_type(file_name)
+        })
+    return lessons
 
-def generate_section(name, course_path):
-    section_path = f"/{course_path}/{name}".replace("\\", "/")
-    section_dir = os.path.join(course_path, name)
-    lessons = [
-        generate_lesson(f, section_path)
-        for f in os.listdir(section_dir)
-        if lesson_filter(f)
-    ]
-    return {"title": clean_name(name), "lessons": lessons}
+def generate_manifest():
+    """Main function to crawl the content directory and write the JSON manifest."""
+    if not os.path.exists(CONTENT_DIR):
+        print(f"Error: Directory '{CONTENT_DIR}' not found.")
+        return
 
+    manifest = {"courses": []}
 
-def generate_course(name, base_path):
-    course_path = os.path.join(base_path, name)
-    course_entry = {
-        "course": name,
-        "title": name,
-        "path": f"/{name}",
-        "sections": []
-    }
+    # 1. Iterate through Courses (e.g., CCPROG1, CCDSTRU)
+    course_folders = sorted([f for f in os.listdir(CONTENT_DIR) if os.path.isdir(os.path.join(CONTENT_DIR, f))])
 
-    for section_name in os.listdir(course_path):
-        section_dir = os.path.join(course_path, section_name)
-        if os.path.isdir(section_dir):
-            section = generate_section(section_name, name)
-            course_entry["sections"].append(section)
+    for course_folder in course_folders:
+        course_path = os.path.join(CONTENT_DIR, course_folder)
 
-    return course_entry
+        course_data = {
+            "title": course_folder.upper(),
+            "slug": course_folder.lower(),
+            "icon_key": COURSE_ICONS.get(course_folder.upper(), "default"),
+            "sections": []
+        }
 
+        # 2. Iterate through Sections (e.g., 01-Introduction)
+        section_folders = sorted([f for f in os.listdir(course_path) if os.path.isdir(os.path.join(course_path, f))])
 
-def build_manifest(base_path):
-    manifest = []
+        for section_folder in section_folders:
+            section_path = os.path.join(course_path, section_folder)
 
-    for course_name in os.listdir(base_path):
-        course_dir = os.path.join(base_path, course_name)
-        if os.path.isdir(course_dir) and not course_name.startswith("."):
-            course_entry = generate_course(course_name, base_path)
-            manifest.append(course_entry)
+            section_data = {
+                # Strips the "01-" from "01-Introduction" for the UI title
+                "title": re.sub(r'^\d+-', '', section_folder).replace("-", " "),
+                "lessons": process_section(section_path, course_folder, section_folder)
+            }
 
-    return manifest
+            course_data["sections"].append(section_data)
 
+        manifest["courses"].append(course_data)
+
+    # 3. Write to File
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, indent=4)
+
+    print(f"Successfully generated {OUTPUT_FILE} with {len(manifest['courses'])} courses.")
 
 if __name__ == "__main__":
-    data = build_manifest(".")
-    with open("manifest.json", "w") as f:
-        json.dump(data, f, indent=2)
-    print("✅ Manifest generated successfully.")
+    generate_manifest()
