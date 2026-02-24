@@ -37,7 +37,7 @@ def format_title(filename):
 
 def get_lesson_type(filename):
     """Determines if a lesson is a lecture or an activity based on filename."""
-    return "activity" if "activity" in filename.lower() else "lecture"
+    return "ACTIVITY" if "activity" in filename.lower() else "LECTURE"
 
 def process_section(section_path, course_name, section_name):
     """Crawls a section folder and returns a list of lesson dictionaries."""
