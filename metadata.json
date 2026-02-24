@@ -12,31 +12,31 @@
                             "title": "Dev Tools",
                             "slug": "dev-tools",
                             "path": "ccprog1/00-getting-started/00-dev-tools.md",
-                            "type": "lecture"
+                            "type": "LECTURE"
                         },
                         {
                             "title": "Text Editors",
                             "slug": "text-editors",
                             "path": "ccprog1/00-getting-started/01-text-editors.md",
-                            "type": "lecture"
+                            "type": "LECTURE"
                         },
                         {
                             "title": "Compiler Install",
                             "slug": "compiler-install",
                             "path": "ccprog1/00-getting-started/02-compiler-install.md",
-                            "type": "lecture"
+                            "type": "LECTURE"
                         },
                         {
                             "title": "Compiler",
                             "slug": "compiler",
                             "path": "ccprog1/00-getting-started/03-compiler.md",
-                            "type": "lecture"
+                            "type": "LECTURE"
                         },
                         {
                             "title": "Terminal Basics",
                             "slug": "terminal-basics",
                             "path": "ccprog1/00-getting-started/04-terminal-basics.md",
-                            "type": "lecture"
+                            "type": "LECTURE"
                         }
                     ]
                 },
@@ -47,37 +47,37 @@
                             "title": "Lesson Proper",
                             "slug": "lesson-proper",
                             "path": "ccprog1/01-introduction/00-lesson-proper.md",
-                            "type": "lecture"
+                            "type": "LECTURE"
                         },
                         {
                             "title": "What Is Programming",
                             "slug": "what-is-programming",
                             "path": "ccprog1/01-introduction/01-what-is-programming.md",
-                            "type": "lecture"
+                            "type": "LECTURE"
                         },
                         {
                             "title": "Structure Of A C Program",
                             "slug": "structure-of-a-c-program",
                             "path": "ccprog1/01-introduction/02-structure-of-a-c-program.md",
-                            "type": "lecture"
+                            "type": "LECTURE"
                         },
                         {
                             "title": "Tokens And Expressions",
                             "slug": "tokens-and-expressions",
                             "path": "ccprog1/01-introduction/03-tokens-and-expressions.md",
-                            "type": "lecture"
+                            "type": "LECTURE"
                         },
                         {
                             "title": "Logic Formulation",
                             "slug": "logic-formulation",
                             "path": "ccprog1/01-introduction/04-activity-logic-formulation.md",
-                            "type": "activity"
+                            "type": "ACTIVITY"
                         },
                         {
                             "title": "First Program",
                             "slug": "first-program",
                             "path": "ccprog1/01-introduction/05-activity-first-program.md",
-                            "type": "activity"
+                            "type": "ACTIVITY"
                         }
                     ]
                 }
